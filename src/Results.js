@@ -75,7 +75,7 @@ class Results extends React.Component {
 function ResultsWithContext (props) {
   return (
     <Consumer>
-      {' '} {context => <Results {...props} searchParams={context} />}{' '}
+      {context => <Results {...props} searchParams={context} />}
     </Consumer>
   );
 }
