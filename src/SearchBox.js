@@ -70,7 +70,6 @@ const mapStateToProps = ({breed, breeds, animal, location}) => ({
   animal,
   location
 })
-
 const mapDispatchToProps = (dispatch) => ({
   handleAnimalChange(event) {
     dispatch(changeAnimal(event.target.value));
@@ -83,5 +82,4 @@ const mapDispatchToProps = (dispatch) => ({
     dispatch(changeLocation(event.target.value));
   }
 })
-
 export default connect(mapStateToProps, mapDispatchToProps)(Search);
